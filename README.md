@@ -16,11 +16,11 @@ It is designed for SharePoint tenants that want a lightweight, browser-based Nin
 
 ## Download
 
-The packaged SharePoint solution is distributed as a GitHub Release asset so end users can install it without building anything locally.
+The packaged SharePoint solution is published as a GitHub Release asset so end users can install it without building anything locally.
 
-- [Latest release](https://github.com/<owner>/<repo>/releases/latest)
+- [Download v2.0.6 package](https://github.com/NTX-XT/spfx-idp-client/releases/download/v2.0.6/nac-tasks.sppkg)
 
-Use the latest release for deployment to your SharePoint App Catalog, or build a fresh package locally from the project if you need a custom version.
+Upload the package to your SharePoint App Catalog to deploy the solution. If you need a custom build, you can still build locally from the project source.
 
 ## Webparts
 
