@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "nac-tasks-client-side-solution",
+    "id": "fbc02bce-f6af-4300-9421-6a38ac297b41",
+    "version": "2.0.6.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Nintex Workflow Tasks and Forms for SharePoint"
+      },
+      "longDescription": {
+        "default": "Nintex Workflow Tasks (view and respond to your assigned tasks with Express Approval support) and Nintex Workflow Forms (browse and open available workflow start forms)."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Nintex Workflow Tasks",
+        "description": "The feature that activates elements of the nac-tasks solution.",
+        "id": "e2f6ffa7-9f6e-435d-a2e3-d109e70b8fd1",
+        "version": "2.0.6.0"
+      }
+    ],
+    "title": "Nintex Workflow Tasks & Forms (SharePoint)"
+  },
+  "paths": {
+    "zippedPackage": "solution/nac-tasks.sppkg"
+  }
+}

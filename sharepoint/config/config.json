@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  
+  "bundles": {
+    "nac-tasks-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/nacTaskActions/NacTaskActionsWebPart.js",
+          "manifest": "./src/webparts/nacTaskActions/NacTaskActionsWebPart.manifest.json"
+        }
+      ]
+    },
+    "nac-forms-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/nacForms/NacFormsWebPart.js",
+          "manifest": "./src/webparts/nacForms/NacFormsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "NacTaskActionsWebPartStrings": "lib/webparts/nacTaskActions/loc/{locale}.js",
+    "NacFormsWebPartStrings": "lib/webparts/nacForms/loc/{locale}.js"
+  }
+}

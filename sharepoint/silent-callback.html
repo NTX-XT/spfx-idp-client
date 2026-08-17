@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><title>Nintex Auth - Silent Callback</title></head>
+<body>
+<!--
+  Silent callback page for oidc-client-ts iframe-based token renewal.
+  Upload this file to your SharePoint site's SiteAssets library:
+    Site Contents > Site Assets > Upload > silent-callback.html
+
+  The URL will be:
+    https://{tenant}.sharepoint.com/{site}/SiteAssets/silent-callback.html
+
+  This page is loaded in a hidden iframe by the Nintex Workflow webparts
+  when they need to silently refresh an expired token. It receives the
+  auth response from auth.nintexcloud.com and posts it back to the parent
+  window (the SharePoint page with the webparts).
+-->
+<script>
+  (function () {
+    // Post the full URL (including ?code= and &state= params) back to the
+    // parent window so oidc-client-ts can complete the token exchange.
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage(window.location.href, window.location.origin);
+    }
+  })();
+</script>
+</body>
+</html>

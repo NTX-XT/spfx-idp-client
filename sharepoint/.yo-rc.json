@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.14.0",
+    "sdkVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.23.0",
+    "libraryName": "Nintex-Workflow-Tasks",
+    "libraryId": "fbc02bce-f6af-4300-9421-6a38ac297b41",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "Nintex Workflow Tasks",
+    "solutionShortDescription": "Nintex Workflow Tasks",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart",
+    "useGulp": false
+  }
+}
